@@ -11,3 +11,25 @@ document.addEventListener('DOMContentLoaded',function(){
  var form=document.getElementById('contactForm');
  if(form){form.addEventListener('submit',function(e){e.preventDefault();document.getElementById('formNote').hidden=false;});}
 });
+
+// FAQ accordion: answers visible without JS; with JS they collapse and open smoothly.
+document.querySelectorAll('.faq-item').forEach(function (item) {
+  var btn = item.querySelector('.faq-q');
+  var panel = item.querySelector('.faq-a');
+  if (!btn || !panel) return;
+  panel.style.maxHeight = '0px';
+  btn.setAttribute('aria-expanded', 'false');
+  btn.addEventListener('click', function () {
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function (other) {
+      other.classList.remove('open');
+      other.querySelector('.faq-a').style.maxHeight = '0px';
+      other.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
