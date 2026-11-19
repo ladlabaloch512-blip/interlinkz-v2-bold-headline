@@ -278,3 +278,6 @@ body.page-contact #ilz-launcher{bottom:104px}
 .nf img{width:110px;height:auto;margin-bottom:20px}
 .nf h1{font-size:44px;margin-bottom:12px}
 .nf p{font-size:18px;margin-bottom:26px}
+
+.tagline{flex-basis:100%;font-size:15px;font-weight:700;letter-spacing:.3px;margin:4px 0 0;color:#242428}
+.footer-in,.foot2-in{flex-wrap:wrap}
