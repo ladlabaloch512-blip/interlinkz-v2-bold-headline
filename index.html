@@ -9,7 +9,14 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="chat.css">
 </head>
-<body class="v2">
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<pattern id="hatchY" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFE98A"/><line x1="0" y1="0" x2="0" y2="7" stroke="#FFCC01" stroke-width="3"/></pattern>
+<pattern id="hatchKY" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFCC01"/><line x1="0" y1="0" x2="0" y2="7" stroke="#242428" stroke-width="2.4"/></pattern>
+<pattern id="hatchK" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#ffffff"/><line x1="0" y1="0" x2="0" y2="8" stroke="#242428" stroke-width="3"/></pattern>
+<pattern id="hatchMix" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="12" fill="#ffffff"/><line x1="1.5" y1="0" x2="1.5" y2="12" stroke="#242428" stroke-width="3"/><line x1="5.5" y1="0" x2="5.5" y2="12" stroke="#FFCC01" stroke-width="3"/><line x1="9.5" y1="0" x2="9.5" y2="12" stroke="#c9c9cd" stroke-width="3"/></pattern>
+<pattern id="hatchMini" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#ffffff"/><line x1="0" y1="0" x2="0" y2="5" stroke="#a9a9ae" stroke-width="1.6"/></pattern>
+</defs></svg>
 <header class="site-header">
 <div class="wrap header-in">
 <a class="brand" href="index.html"><img src="logo-h-light.jpg" alt="Interlinkz logo"></a>
@@ -19,44 +26,55 @@
 </div>
 </header>
 <main>
-<section class="hero hero-bold wrap">
-<span class="hatch hatch-tr" aria-hidden="true">Z</span><span class="hatch hatch-bl" aria-hidden="true">Z</span>
-<h1>Your business,<br>linked to growth.</h1>
-<p class="hero-sub">Website Development, Marketing, Branding and Business Growth.</p>
-<a class="btn" href="contact.html">Start a Project</a>
-</section>
-<section class="wrap bold-services">
-<p class="kicker center">Services</p>
-<div class="chain-boxes"><a class="chain-box" href="website-development.html">Website Development</a><span class="box-link" aria-hidden="true"></span><a class="chain-box" href="marketing.html">Marketing</a><span class="box-link" aria-hidden="true"></span><a class="chain-box" href="branding.html">Branding</a><span class="box-link" aria-hidden="true"></span><a class="chain-box" href="business-growth.html">Business Growth</a></div>
-</section>
-<section class="link-chain wrap">
-<p class="kicker">The Link Chain</p>
-<div class="chain-row"><span class="chain-step">Plan</span><span class="chain-link" aria-hidden="true"></span><span class="chain-step">Design</span><span class="chain-link" aria-hidden="true"></span><span class="chain-step">Build</span><span class="chain-link" aria-hidden="true"></span><span class="chain-step">Grow</span></div>
-</section>
-<section class="cta">
-<div class="wrap cta-in">
-<h2>Ready to start a project?</h2>
-<a class="btn" href="contact.html">Start a Project</a>
+<section class="hero2">
+<svg class="hz" data-dir="r" style="width:262px;top:-8px;right:-84px" viewBox="0 0 260 300" aria-hidden="true"><g fill="url(#hatchY)"><polygon points="52,52 225,52 225,94 52,94"/><polygon points="225,94 180,94 78,248 124,248"/><polygon points="52,248 225,248 225,290 52,290"/></g></svg>
+<svg class="hz" data-dir="l" style="width:252px;left:-96px;bottom:-26px" viewBox="0 0 260 300" aria-hidden="true"><g fill="url(#hatchY)"><polygon points="52,52 225,52 225,94 52,94"/><polygon points="225,94 180,94 78,248 124,248"/><polygon points="52,248 225,248 225,290 52,290"/></g></svg>
+<div class="wrap">
+<h1>Your business,<br><span class="swoosh">linked<svg viewBox="0 0 300 34" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#FFCC01" stroke-width="10" stroke-linecap="square"><path class="sw-p" d="M8,7 H292"/><path class="sw-p" d="M292,7 L44,27"/><path class="sw-p" d="M44,27 H292"/></g></svg></span> to growth.</h1>
+<p class="sub-c">Website Development, Marketing, Branding and Business Growth.</p>
+<p class="svc-label">SERVICES</p>
+<div class="svc-boxes" data-joins>
+<a class="svc-box" href="website-development.html">Website Development</a>
+<span class="svc-join jn"><svg width="46" height="24" viewBox="0 0 46 24" aria-hidden="true"><g fill="none" stroke="#242428" stroke-width="4.4"><rect x="2" y="5" width="25" height="14" rx="7"/><rect x="19" y="5" width="25" height="14" rx="7"/></g></svg></span>
+<a class="svc-box" href="marketing.html">Marketing</a>
+<span class="svc-join jn"><svg width="46" height="24" viewBox="0 0 46 24" aria-hidden="true"><g fill="none" stroke="#242428" stroke-width="4.4"><rect x="2" y="5" width="25" height="14" rx="7"/><rect x="19" y="5" width="25" height="14" rx="7"/></g></svg></span>
+<a class="svc-box" href="branding.html">Branding</a>
+<span class="svc-join jn"><svg width="46" height="24" viewBox="0 0 46 24" aria-hidden="true"><g fill="none" stroke="#242428" stroke-width="4.4"><rect x="2" y="5" width="25" height="14" rx="7"/><rect x="19" y="5" width="25" height="14" rx="7"/></g></svg></span>
+<a class="svc-box" href="business-growth.html">Business Growth</a>
 </div>
+</div>
+</section>
+<section class="wrap chain-big">
+<h2>The Link Chain</h2>
+<div class="chain-words2" data-joins>
+<span class="w">Plan</span>
+<span class="seg jn"><svg width="118" height="20" viewBox="0 0 118 20" aria-hidden="true"><line x1="2" y1="10" x2="42" y2="10" stroke="#c9c9cd" stroke-width="2"/><line x1="76" y1="10" x2="116" y2="10" stroke="#c9c9cd" stroke-width="2"/><g fill="none" stroke="#242428" stroke-width="2.6"><rect x="41" y="4" width="17" height="12" rx="6"/><rect x="60" y="4" width="17" height="12" rx="6"/></g></svg></span>
+<span class="w">Design</span>
+<span class="seg jn"><svg width="118" height="20" viewBox="0 0 118 20" aria-hidden="true"><line x1="2" y1="10" x2="42" y2="10" stroke="#c9c9cd" stroke-width="2"/><line x1="76" y1="10" x2="116" y2="10" stroke="#c9c9cd" stroke-width="2"/><g fill="none" stroke="#242428" stroke-width="2.6"><rect x="41" y="4" width="17" height="12" rx="6"/><rect x="60" y="4" width="17" height="12" rx="6"/></g></svg></span>
+<span class="w">Build</span>
+<span class="seg jn"><svg width="118" height="20" viewBox="0 0 118 20" aria-hidden="true"><line x1="2" y1="10" x2="42" y2="10" stroke="#c9c9cd" stroke-width="2"/><line x1="76" y1="10" x2="116" y2="10" stroke="#c9c9cd" stroke-width="2"/><g fill="none" stroke="#242428" stroke-width="2.6"><rect x="41" y="4" width="17" height="12" rx="6"/><rect x="60" y="4" width="17" height="12" rx="6"/></g></svg></span>
+<span class="w">Grow</span>
+</div>
+</section>
+<section class="cta-c">
+<h2>Ready to start a project?<br>Want to start a project with us?</h2>
+<p style="margin-top:26px"><a class="btn" href="contact.html">Start a Project</a></p>
 </section>
 </main>
-<footer class="site-footer">
-<div class="wrap footer-in">
-<div class="foot-brand">
-<img src="logo-h-light.jpg" alt="Interlinkz logo">
-<div class="builtby"><span>Built by</span><strong>INTERLINKZ</strong></div>
-</div>
-<nav class="foot-nav"><a href="index.html">Home</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
-<div class="foot-contact">
+<footer class="foot2" style="margin-top:0">
+<div class="wrap foot2-in">
+<a class="brand" href="index.html"><img src="logo-h-light.jpg" alt="Interlinkz logo"></a>
+<div class="foot2-contacts stack">
 <a href="https://interlinkz.com">https://interlinkz.com</a>
 <a href="mailto:contact@interlinkz.com">contact@interlinkz.com</a>
 </div>
 </div>
 </footer>
-
 <div id="ilz-chat-root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="anim.js" defer></script>
 <script src="chat.js" defer></script>
-
 <script src="script.js" defer></script>
 </body>
 </html>
