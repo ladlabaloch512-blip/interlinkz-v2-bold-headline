@@ -33,3 +33,14 @@ document.querySelectorAll('.faq-item').forEach(function (item) {
     }
   });
 });
+
+// FAQ page: open the first question by default so the pattern is visible.
+if (/faq\.html$/.test(window.location.pathname)) {
+  var firstItem = document.querySelector('.faq-item');
+  if (firstItem) {
+    var fp = firstItem.querySelector('.faq-a');
+    firstItem.classList.add('open');
+    fp.style.maxHeight = fp.scrollHeight + 'px';
+    firstItem.querySelector('.faq-q').setAttribute('aria-expanded', 'true');
+  }
+}
