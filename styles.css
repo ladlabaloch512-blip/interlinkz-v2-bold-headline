@@ -394,3 +394,23 @@ body.page-contact #ilz-launcher{bottom:104px}
  .contact-box .left,.contact-box .right{min-width:0}
  .contact-box svg{max-width:100%;height:auto}
 }
+
+/* Footer rebuild 2026-11-23: one clean structure. Brand block (logo, tagline,
+   website and email), Services column, Company column in two link tracks,
+   and a single bottom row with the legal links. No link appears twice. */
+.foot-brand{flex:0 0 300px;max-width:300px}
+.foot-brand .foot2-contacts.stack{margin-left:0;align-items:flex-start;margin-top:12px}
+.foot-cols{display:flex;gap:54px;margin-left:auto}
+.foot-col h4{font-size:14px;font-weight:800;letter-spacing:1.5px;margin-bottom:10px;display:inline-block;border-bottom:3px solid var(--yellow);padding-bottom:4px}
+.foot-col a{display:block;font-size:15.5px;padding:2px 0;white-space:nowrap}
+.foot-col a:hover{text-decoration:underline}
+.foot-col-grid{display:grid;grid-template-rows:repeat(4,auto);grid-auto-flow:column;column-gap:46px}
+.foot-col-grid a{display:block;font-size:15.5px;padding:2px 0;white-space:nowrap}
+.foot-bar{border-top:1px solid var(--line);padding-top:14px;padding-bottom:18px}
+.foot-legal{margin-left:0}
+@media(max-width:860px){
+ .foot-brand{flex:none;max-width:none;text-align:center}
+ .foot-brand .foot2-contacts.stack{align-items:center}
+ .foot-cols{margin-left:0;justify-content:center;flex-wrap:wrap}
+ .foot-bar{padding-left:44px}
+}
